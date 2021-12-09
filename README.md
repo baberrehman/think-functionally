@@ -1,1 +1,1 @@
-# think-functionally
+# Thinking Functionally With Haskell
