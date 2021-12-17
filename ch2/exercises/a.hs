@@ -1,0 +1,10 @@
+-- [0,1)
+-- double -3
+-- double (-3)
+-- double double 0
+-- if 1==0 then 2==1
+-- "++" == "+" ++ "+"
+-- [(+),(-)]
+-- [[],[[]],[[[]]]]
+-- concat ["tea","for",'2']
+-- concat ["tea","for","2"]
