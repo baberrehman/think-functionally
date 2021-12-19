@@ -46,3 +46,18 @@ dayPostFix x
 
 showDate :: Date -> String
 showDate (day, month, year) = dayPostFix day ++ " " ++ months !! (month-1) ++ ", " ++ show year
+
+-- Exercise H
+
+type CIN = String
+
+addSum :: CIN -> CIN
+addSum xs
+  | (length xs) /= 8 = error "length is not equal to 8"
+  | otherwise = xs ++ show (sum (map digitToInt xs))
+
+
+valid :: CIN -> Bool
+valid xs = lastTwo == (sumEight (take 8 xs))
+           where lastTwo = (digitToInt (xs !! 8) * 10) + (digitToInt (xs !! 9))
+                 sumEight xs' = sum (map digitToInt xs')
